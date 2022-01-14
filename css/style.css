@@ -1,0 +1,122 @@
+:root {
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --vDarkCyan: hsl(179, 100%, 13%);
+  --white: hsla(0, 0%, 100%, 0.75);
+  --vLightGray: hsl(0, 0%, 95%);
+}
+
+body {
+  background-color: var(--vLightGray);
+}
+
+.container {
+  display: grid;
+  margin: 40px 16px 40px 16px;
+  font-family: "Inter", sans-serif;
+  grid-template-columns: 1fr;
+}
+
+h1 {
+  font-size: 28px;
+  text-transform: uppercase;
+  color: var(--white);
+  font-family: "Big Shoulders Display", cursive;
+}
+.item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px 30px;
+  font-size: 30px;
+}
+
+p {
+  color: var(--white);
+  font-size: 16px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background-color: var(--vLightGray);
+  font-size: 18px;
+  margin: 30px 0;
+  cursor: pointer;
+  border: 1px solid var(--white);
+}
+
+#item-1 {
+  background-color: var(--brightOrange);
+}
+
+#sedan-btn {
+  color: var(--brightOrange);
+}
+
+#sedan-btn:hover {
+  background-color: var(--brightOrange);
+  color: var(--white);
+}
+
+#item-2 {
+  background-color: var(--darkCyan);
+}
+
+#suv-btn {
+  color: var(--darkCyan);
+}
+#suv-btn:hover {
+  background-color: var(--darkCyan);
+  color: var(--white);
+}
+#item-3 {
+  background-color: var(--vDarkCyan);
+}
+
+#luxury-btn {
+  color: var(--vDarkCyan);
+}
+
+#luxury-btn:hover {
+  background-color: var(--vDarkCyan);
+  color: var(--white);
+}
+.attribution {
+  font-size: 16px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 769px) {
+  .container {
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 80vh;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+  }
+  .item {
+    cursor: pointer;
+  }
+  #item-1 {
+    border-radius: 10px 0px 0px 10px;
+  }
+  #item-1:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+  }
+  #item-2:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+  }
+  #item-3 {
+    border-radius: 0px 10px 10px 0px;
+  }
+  #item-3:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+  }
+}
