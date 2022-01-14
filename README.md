@@ -24,7 +24,7 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 ### Links
 
 - Solution URL:(https://github.com/NitiMittal/3-card-layout-frontend.io)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL:(https://3-card-layout.netlify.app/)
 
 ## My process
 
